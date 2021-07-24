@@ -96,3 +96,12 @@ accounting.describe();
 // if copy isn't given a name property there will be an issue on compilation because copy won't be based on the Department Class
 // const accountingCopy = {name:'DUMMY', describe: accounting.describe};
 // accountingCopy.describe();
+/*
+
+
+
+
+
+
+
+*/ 
