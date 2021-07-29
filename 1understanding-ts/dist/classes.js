@@ -30,8 +30,8 @@ class Department {
     describe() {
         console.log(`Department (${this.id}) : ${this.name}`);
     }
-    // Suppose we want describe method but each object needs to implement it in its own way. 
-    // Give it the 'abstract' keyword, any params the function takes, and the define the return type. 
+    // Suppose we want describe method but each object needs to implement it in its own way.
+    // Give it the 'abstract' keyword, any params the function takes, and the define the return type.
     // Also will need to add 'abstract' to the class. Once you do this, that class can only be inherited from, not instantiated
     // abstract describe(this:Department) : void;
     addEmployee(employee) {
@@ -89,13 +89,13 @@ class AccountingDepartment extends Department {
         }
         this.addReport(value);
     }
-    // this solves the issue of trying to instantiate this object. When the constructor is private, we need a way to make itself. 
-    static getInstance() {
-        if (this.instance) {
-            return this.instance;
-        }
-        this.instance = new AccountingDepartment(5, []);
-    }
+    // this solves the issue of trying to instantiate this object. When the constructor is private, we need a way to make itself.
+    // static getInstance() {
+    //   if (this.instance) {
+    //     return this.instance;
+    //   }
+    //   this.instance = new AccountingDepartment(5, []);
+    // }
     addReport(text) {
         this.reports.push(text);
         this.lastReport = text;
@@ -111,11 +111,11 @@ class AccountingDepartment extends Department {
         this.employees.push(name);
     }
     describe() {
-        console.log('Accounting Department - ID ' + this.id);
+        console.log("Accounting Department - ID " + this.id);
     }
 }
-// const accounting = new AccountingDepartment(5, []);
-const accounting = AccountingDepartment.getInstance();
+const accounting = new AccountingDepartment(5, []);
+// const accounting = AccountingDepartment.getInstance();
 const infoTech = new ITDepartment(29, ["Max"]);
 //accessing static methods and properties
 // const employee1 = Department.createEmployee('Taco');
@@ -123,7 +123,7 @@ const infoTech = new ITDepartment(29, ["Max"]);
 // const employee2 = AccountingDepartment.createEmployee('Jimbo');
 // console.log(employee2);
 // console.log(Department.fiscalYear);
-accounting === null || accounting === void 0 ? void 0 : accounting.addEmployee("Josh");
+accounting.addEmployee("Josh");
 accounting === null || accounting === void 0 ? void 0 : accounting.addEmployee("Manuel");
 accounting === null || accounting === void 0 ? void 0 : accounting.addReport("Testing it out");
 accounting === null || accounting === void 0 ? void 0 : accounting.addReport("Second Report");
@@ -132,8 +132,8 @@ accounting === null || accounting === void 0 ? void 0 : accounting.addEmployee("
 // accounting.printEmployeeInfo();
 accounting === null || accounting === void 0 ? void 0 : accounting.describe();
 infoTech.addEmployee("Dane");
-// access getters and setters like properties. 
-accounting.mostRecentReport = 'All is well.';
+// access getters and setters like properties.
+accounting.mostRecentReport = "All is well.";
 console.log(accounting === null || accounting === void 0 ? void 0 : accounting.mostRecentReport);
 console.log(accounting);
 console.log(infoTech);
