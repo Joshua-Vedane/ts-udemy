@@ -99,19 +99,19 @@
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   }
    
-  // ,    // how to exclude files from compilation
+      // how to exclude files from compilation
   // "exclude": [
   //   "functions.js", 
   //   // "*.dev.ts",
   //   "node_modules" // excluded by default
   // ], 
   // //how to only include specific files
-  // "include": [
-  //   "app.ts",
-  //   "notes.ts"
+  // ,"include": [
+  //   "interfaces.ts"
   // ],
+
   // //only run these files
   // "files":[
-  //   "app.ts"
+  //   "interfaces.ts"
   // ]
 }
