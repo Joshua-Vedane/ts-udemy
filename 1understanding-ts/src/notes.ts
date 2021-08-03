@@ -15,7 +15,7 @@
 //   age: number;
 // } = {
 // const person = {
-//   name: 'Moira',
+//   name: 'Moira', 
 //   age: 1
 // }
 // console.log(person.name);

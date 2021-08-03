@@ -30,10 +30,10 @@
 
     // "outFile": "./",                             /* Concatenate and emit output to single file. */
 
-    "outDir": "./dist",                               /* Redirect output structure to the directory. */
+    "outDir": "dist",                               /* Redirect output structure to the directory. */
       // where to put your compiled .js files
 
-    "rootDir": "./src",                             /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "rootDir": "src",                             /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
       // where your .ts files are stored
 
     // "composite": true,                           /* Enable project compilation */
@@ -97,21 +97,24 @@
     /* Advanced Options */
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
    
       // how to exclude files from compilation
   // "exclude": [
-  //   "functions.js", 
-  //   // "*.dev.ts",
-  //   "node_modules" // excluded by default
-  // ], 
-  // //how to only include specific files
-  // ,"include": [
-  //   "interfaces.ts"
+  //   "node_modules", // excluded by default
+  //   "notes.ts",
+  //   "app.ts"
   // ],
 
-  // //only run these files
-  // "files":[
-  //   "interfaces.ts"
+  // "include": [
+  //   "interfaces.ts",
+  //   "classes.ts",
   // ]
+
+  //only run these files
+  "files":[
+    "./src/interfaces.ts",
+    "./src/classes.ts",
+    "./src/advancedTypes.ts"
+  ]
 }
