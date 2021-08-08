@@ -32,7 +32,7 @@ class Hobbies {
 }
 // can implement mult interfaces spaced with comma.
 //
-class Person extends Hobbies implements Greetable {
+class Human extends Hobbies implements Greetable {
   name: string;
   age: number;
 
@@ -48,7 +48,7 @@ class Person extends Hobbies implements Greetable {
 }
 
 let user1: Greetable;
-user1 = new Person("Joshua", 27, ["Board Games", "Reading"]);
+user1 = new Human("Joshua", 27, ["Board Games", "Reading"]);
 
 user1.greet("Hallo, ich bin");
 

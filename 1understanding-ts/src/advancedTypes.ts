@@ -90,7 +90,7 @@ function useVehicle(vehicle: Vehicle){
 useVehicle(v1);
 useVehicle(v2);
 
-// Descriminated Union 
+//// DISCRIMINATED UNION 
 
 interface Bird{
   //this is a literal type where 'type' must hold a string that must be 'bird'.
