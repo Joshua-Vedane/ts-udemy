@@ -12,7 +12,7 @@
 //   console.log('Logging....');
 //   console.log(target);
 // }
-
+ 
 // this is a factory decorator. it returns an function
 function Logger(logString: string) {
   return function (target: Function) {
